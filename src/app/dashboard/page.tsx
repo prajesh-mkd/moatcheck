@@ -35,7 +35,7 @@ const WIZARD_STEPS = [
     type: "buttons" as const,
     options: [
       { value: "consumers", label: "👤 Consumers", desc: "Individual people" },
-      { value: "smb", label: "🏪 Small Businesses", desc: "Mom & pop, local shops" },
+      { value: "smb", label: "🏪 Small Businesses", desc: "Typical small companies & shops" },
       { value: "midmarket", label: "🏢 Mid-Market", desc: "Growing companies" },
       { value: "enterprise", label: "🏛️ Enterprise", desc: "Large orgs, Fortune 500" },
       { value: "developers", label: "💻 Developers", desc: "Engineers & tech teams" },
