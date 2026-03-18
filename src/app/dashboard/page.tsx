@@ -63,7 +63,6 @@ const WIZARD_STEPS = [
       { value: "product", label: "📦 Physical Product", desc: "One-time hardware/goods sale" },
       { value: "marketplace", label: "🏪 Marketplace", desc: "Take a cut of transactions" },
       { value: "freemium", label: "🎁 Freemium", desc: "Free tier + paid upgrades" },
-      { value: "transaction", label: "💳 Transaction fee", desc: "Per-use or per-transaction" },
       { value: "unsure", label: "🤷 Not sure yet", desc: "Still figuring it out" },
     ],
   },
@@ -159,7 +158,6 @@ export default function DashboardPage() {
       product: "Physical Product (one-time hardware or goods sale)",
       marketplace: "Marketplace (take a cut of transactions)",
       freemium: "Freemium (free tier + paid upgrades)",
-      transaction: "Transaction fee (per-use pricing)",
       unsure: "Revenue model not yet determined",
     };
 
