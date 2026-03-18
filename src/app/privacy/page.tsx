@@ -20,7 +20,7 @@ export default function PrivacyPage() {
           <p>By using MoatCheck, you understand that your startup ideas and uploaded documents are sent to our language model providers as part of the analysis process. Do not upload materials containing personally identifiable information (PII) or strictly confidential trade secrets that you are not comfortable processing through a cloud AI provider.</p>
           
           <h2>4. Data Retention</h2>
-          <p>Ideas and files processed during an anonymous browser session are designed to be temporary and are not permanently stored or used to train public LLMs by our platform.</p>
+          <p>Ideas and files processed during an anonymous browser session are designed to be temporary and are not permanently stored by our platform.</p>
           
           <h2>5. Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, please contact us at support via the link in the navigation menu.</p>
