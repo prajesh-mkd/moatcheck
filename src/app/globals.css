@@ -435,8 +435,6 @@ button:active:not(:disabled) {
 /* ── Hero Agent Squad ───────────────────────────── */
 .hero-squad {
   display: flex; flex-direction: column; align-items: center; gap: 12px;
-  background-color: var(--bg-primary); border: 2px solid var(--border);
-  border-radius: var(--radius-lg); padding: 20px 32px;
   margin: 32px auto 40px; max-width: fit-content;
 }
 .hero-squad-title {
@@ -448,12 +446,12 @@ button:active:not(:disabled) {
 }
 .hero-squad-agent { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .hero-squad-avatar {
-  width: 56px; height: 56px; border-radius: 20px;
+  width: 56px; height: 56px; border-radius: 50%; /* perfectly round so it looks like a profile */
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.8rem; border: 2px solid var(--border);
-  color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 1.8rem; color: white;
+  /* Removed border and box-shadow to look flat and non-interactive */
 }
-.hero-squad-name { font-size: 0.85rem; font-weight: 800; color: var(--text-primary); }
+.hero-squad-name { font-size: 0.85rem; font-weight: 800; color: var(--text-secondary); }
 
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 640px) {
