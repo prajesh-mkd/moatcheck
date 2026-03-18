@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           <p>We use the information you provide strictly to operate the MoatCheck AI analysis service. Your inputs and documents are immediately processed by our backend AI agents (powered by third-party cloud LLM providers) to generate your custom reports, and are not retained by our application afterward.</p>
           
           <h2>3. Data Processing and LLMs</h2>
-          <p>By using MoatCheck, you understand that your startup ideas and uploaded documents are sent to our language model providers as part of the analysis process. Data is processed in accordance with the applicable third-party provider's terms of service and privacy policies.</p>
+          <p>We utilize secure, industry-standard third-party AI models to analyze your startup ideas and documents in real-time. Data is processed in accordance with the applicable third-party provider's terms of service and privacy policies.</p>
           
           <h2>4. Data Retention</h2>
           <p>Ideas and files processed during an anonymous browser session are designed to be temporary and are not permanently stored by our platform.</p>
