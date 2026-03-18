@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           <p>We use the information we collect strictly to provide the MoatCheck AI analysis service. Your inputs and documents are processed by our backend engine (powered by DigitalOcean Gradient and GPT-5.4) to generate your custom reports.</p>
           
           <h2>3. Data Processing and LLMs</h2>
-          <p>By using MoatCheck, you understand that your startup ideas and uploaded documents are sent to our language model providers as part of the analysis process. Do not upload materials containing personally identifiable information (PII) or strictly confidential trade secrets that you are not comfortable processing through a cloud AI provider.</p>
+          <p>By using MoatCheck, you understand that your startup ideas and uploaded documents are sent to our language model providers as part of the analysis process. Data is processed in accordance with the applicable third-party provider's terms of service and privacy policies.</p>
           
           <h2>4. Data Retention</h2>
           <p>Ideas and files processed during an anonymous browser session are designed to be temporary and are not permanently stored by our platform.</p>
