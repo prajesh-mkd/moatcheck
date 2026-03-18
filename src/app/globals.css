@@ -444,13 +444,13 @@ button:active:not(:disabled) {
 .hero-squad-agents {
   display: flex; gap: 24px; align-items: center; justify-content: center; flex-wrap: wrap;
 }
-.hero-squad-agent { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.hero-squad-agent { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .hero-squad-avatar {
-  width: 56px; height: 56px; border-radius: 50%; /* perfectly round so it looks like a profile */
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.8rem; color: white;
-  /* Removed border and box-shadow to look flat and non-interactive */
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 2.75rem; 
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.hero-squad-avatar:hover { transform: scale(1.2) rotate(10deg); cursor: default; }
 .hero-squad-name { font-size: 0.85rem; font-weight: 800; color: var(--text-secondary); }
 
 /* ── Responsive ─────────────────────────────────── */
