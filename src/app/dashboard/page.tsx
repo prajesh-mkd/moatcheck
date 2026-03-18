@@ -60,7 +60,7 @@ const WIZARD_STEPS = [
     type: "buttons" as const,
     options: [
       { value: "subscription", label: "📅 Subscription / SaaS", desc: "Monthly or annual fee" },
-      { value: "product", label: "📦 Physical Product", desc: "One-time purchase" },
+      { value: "product", label: "📦 Physical Product", desc: "Single purchase" },
       { value: "marketplace", label: "🏪 Marketplace", desc: "Take a cut of transactions" },
       { value: "freemium", label: "🎁 Freemium", desc: "Free tier + paid upgrades" },
       { value: "unsure", label: "🤷 Not sure yet", desc: "Still figuring it out" },
