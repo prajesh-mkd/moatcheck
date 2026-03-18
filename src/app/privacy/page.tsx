@@ -10,11 +10,11 @@ export default function PrivacyPage() {
         <div className="result-body" style={{ color: "var(--text-secondary)" }}>
           <p><strong>Last Updated:</strong> March 2026</p>
           
-          <h2 style={{ marginTop: "32px" }}>1. Information We Collect</h2>
-          <p>We collect information you provide directly to us through the MoatCheck application. This includes the startup ideas you type, the target customer segments you select, and any documents (like Pitch Decks) you upload for analysis.</p>
+          <h2 style={{ marginTop: "32px" }}>1. Information We Process</h2>
+          <p>We process information you provide directly to us through the MoatCheck application in real-time. This includes the startup ideas you type, the target customer segments you select, and any documents (like Pitch Decks) you upload for analysis. We do not persistently store this information in a database.</p>
           
           <h2>2. How We Use Your Information</h2>
-          <p>We use the information we collect strictly to provide the MoatCheck AI analysis service. Your inputs and documents are processed by our backend engine (powered by DigitalOcean Gradient and GPT-5.4) to generate your custom reports.</p>
+          <p>We use the information you provide strictly to operate the MoatCheck AI analysis service. Your inputs and documents are immediately processed by our backend AI agents (powered by DigitalOcean Gradient and GPT-5.4) to generate your custom reports, and are not retained by our application afterward.</p>
           
           <h2>3. Data Processing and LLMs</h2>
           <p>By using MoatCheck, you understand that your startup ideas and uploaded documents are sent to our language model providers as part of the analysis process. Data is processed in accordance with the applicable third-party provider's terms of service and privacy policies.</p>
