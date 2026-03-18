@@ -28,42 +28,27 @@ export default function HomePage() {
             <div className="hero-squad-agent">
               <div className="hero-squad-avatar">🦉</div>
               <div className="hero-squad-name">Vera</div>
-              <div className="hero-squad-role">
-                <span>The Verdict</span>
-                <span>Owl</span>
-              </div>
+              <div className="hero-squad-role">The Verdict <br/>Owl</div>
             </div>
             <div className="hero-squad-agent">
               <div className="hero-squad-avatar">🐢</div>
               <div className="hero-squad-name">Momo</div>
-              <div className="hero-squad-role">
-                <span>The Moat</span>
-                <span>Turtle</span>
-              </div>
+              <div className="hero-squad-role">The Moat <br/>Turtle</div>
             </div>
             <div className="hero-squad-agent">
               <div className="hero-squad-avatar">🦦</div>
               <div className="hero-squad-name">Max</div>
-              <div className="hero-squad-role">
-                <span>The Market</span>
-                <span>Meerkat</span>
-              </div>
+              <div className="hero-squad-role">The Market <br/>Meerkat</div>
             </div>
             <div className="hero-squad-agent">
               <div className="hero-squad-avatar">🐼</div>
               <div className="hero-squad-name">Pat</div>
-              <div className="hero-squad-role">
-                <span>The Pattern</span>
-                <span>Panda</span>
-              </div>
+              <div className="hero-squad-role">The Pattern <br/>Panda</div>
             </div>
             <div className="hero-squad-agent">
               <div className="hero-squad-avatar">🦏</div>
               <div className="hero-squad-name">Rex</div>
-              <div className="hero-squad-role">
-                <span>The Risk</span>
-                <span>Rhino</span>
-              </div>
+              <div className="hero-squad-role">The Risk <br/>Rhino</div>
             </div>
           </div>
         </div>
