@@ -140,7 +140,7 @@ button:active:not(:disabled) {
 }
 .hero h1 { 
   display: block; text-align: center;
-  font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 20px; line-height: 1.2; 
+  font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 20px; line-height: 1.2; 
 }
 .hero-desktop { display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .hero-desktop span { white-space: nowrap; }
