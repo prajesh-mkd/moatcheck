@@ -432,6 +432,29 @@ button:active:not(:disabled) {
   display: inline-block; align-self: flex-start; margin-bottom: 4px;
 }
 
+/* ── Hero Agent Squad ───────────────────────────── */
+.hero-squad {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  background-color: var(--bg-primary); border: 2px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px 32px;
+  margin: 32px auto 40px; max-width: fit-content;
+}
+.hero-squad-title {
+  font-size: 0.85rem; font-weight: 800; text-transform: uppercase;
+  color: var(--text-muted); letter-spacing: 0.05em; margin: 0;
+}
+.hero-squad-agents {
+  display: flex; gap: 24px; align-items: center; justify-content: center; flex-wrap: wrap;
+}
+.hero-squad-agent { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.hero-squad-avatar {
+  width: 56px; height: 56px; border-radius: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; border: 2px solid var(--border);
+  color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.hero-squad-name { font-size: 0.85rem; font-weight: 800; color: var(--text-primary); }
+
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 640px) {
   .wizard-card { padding: 32px 20px; }

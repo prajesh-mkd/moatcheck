@@ -15,6 +15,33 @@ export default function HomePage() {
           <span>startup idea <span className="hero-highlight">before</span></span>
           <span className="hero-highlight">you burn the cash</span>
         </h1>
+
+        <div className="hero-squad">
+          <div className="hero-squad-title">Agent Squad</div>
+          <div className="hero-squad-agents">
+            <div className="hero-squad-agent">
+              <div className="hero-squad-avatar" style={{ background: "var(--text-primary)" }}>🦉</div>
+              <div className="hero-squad-name">Vera</div>
+            </div>
+            <div className="hero-squad-agent">
+              <div className="hero-squad-avatar" style={{ background: "var(--accent)" }}>🦦</div>
+              <div className="hero-squad-name">Max</div>
+            </div>
+            <div className="hero-squad-agent">
+              <div className="hero-squad-avatar" style={{ background: "var(--success)" }}>🐼</div>
+              <div className="hero-squad-name">Pat</div>
+            </div>
+            <div className="hero-squad-agent">
+              <div className="hero-squad-avatar" style={{ background: "var(--danger)" }}>🦏</div>
+              <div className="hero-squad-name">Rex</div>
+            </div>
+            <div className="hero-squad-agent">
+              <div className="hero-squad-avatar" style={{ background: "var(--warning)" }}>🐢</div>
+              <div className="hero-squad-name">Momo</div>
+            </div>
+          </div>
+        </div>
+
         <p>
           5 AI agents evaluate your idea&apos;s competitive moat, find real competitors,
           compare against successes &amp; failures, and score your AI disruption risk. Blunt & unfiltered.
