@@ -54,10 +54,7 @@ LLMs can fabricate company names and statistics. MoatCheck addresses this with:
 3. **Anti-hallucination rules** — Explicit instructions to never fabricate data
 4. **Low temperature (0.3)** — More factual, less creative outputs
 
-## 🎨 Personality Modes
 
-- **⚖️ Balanced** — Professional and constructive analysis
-- **🔥 Brutal** — Ruthlessly honest, VC-skeptic perspective
 
 ## 🛠️ Tech Stack
 
@@ -114,7 +111,7 @@ Visit `http://localhost:3000` 🎉
 Premium dark theme with flat orange accents, featuring the 5 AI agents and how-it-works flow.
 
 ### Dashboard
-Idea input with personality toggle (Balanced/Brutal), document upload, and tabbed results view.
+Idea input, document upload, and tabbed results view.
 
 ### MOAT Scorecard
 7-dimension scoring with real-world comparisons to companies like Uber, Stripe, and Airbnb.
