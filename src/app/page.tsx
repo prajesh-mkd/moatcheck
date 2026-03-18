@@ -62,9 +62,11 @@ export default function HomePage() {
             Test Your Idea →
           </Link>
         </div>
-        <p className="hero-powered" style={{ marginTop: "40px", fontSize: "0.95rem", fontWeight: 700, color: "var(--text-muted)" }}>
-          Powered by DigitalOcean Gradient AI
-        </p>
+        <div style={{ marginTop: "60px" }}>
+          <p style={{ fontSize: "0.75rem", color: "var(--text-muted)", fontWeight: "700" }}>
+            Powered by DigitalOcean Gradient AI
+          </p>
+        </div>
       </section>
 
       {/* Sections removed (moved to /features and /agents) */}
