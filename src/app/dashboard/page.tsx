@@ -60,7 +60,7 @@ const WIZARD_STEPS = [
     type: "buttons" as const,
     options: [
       { value: "subscription", label: "📅 Subscription / SaaS", desc: "Monthly or annual fee" },
-      { value: "product", label: "📦 Physical Product", desc: "One-time hardware/goods sale" },
+      { value: "product", label: "📦 Physical Product", desc: "One-time purchase" },
       { value: "marketplace", label: "🏪 Marketplace", desc: "Take a cut of transactions" },
       { value: "freemium", label: "🎁 Freemium", desc: "Free tier + paid upgrades" },
       { value: "unsure", label: "🤷 Not sure yet", desc: "Still figuring it out" },
@@ -155,7 +155,7 @@ export default function DashboardPage() {
     };
     const revenueMap: Record<string, string> = {
       subscription: "Subscription / SaaS (monthly or annual fee)",
-      product: "Physical Product (one-time hardware or goods sale)",
+      product: "Physical Product (one-time purchase)",
       marketplace: "Marketplace (take a cut of transactions)",
       freemium: "Freemium (free tier + paid upgrades)",
       unsure: "Revenue model not yet determined",
