@@ -452,8 +452,8 @@ button:active:not(:disabled) {
   background: var(--bg-primary); 
   border: 2px solid var(--border);
   border-radius: 20px;
-  padding: 4px 16px;
-  font-size: 0.75rem; 
+  padding: 2px 12px;
+  font-size: 0.65rem; 
   font-weight: 800; 
   text-transform: uppercase;
   color: var(--text-muted); 
