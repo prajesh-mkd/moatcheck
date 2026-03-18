@@ -1,7 +1,7 @@
 # 🛡️ MoatCheck — AI-Powered Startup Idea Validator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-> **Is your startup idea defensible?** MoatCheck uses a team of 4 AI agents to evaluate your startup's competitive moat, identify risks, and provide actionable strategies — all powered by DigitalOcean Gradient AI.
+> **Is your startup idea defensible?** MoatCheck uses a specialized team of 5 AI agents to evaluate your startup's competitive moat, identify risks, and synthesize a final verdict — all powered by DigitalOcean Gradient AI.
 
 🔗 **Live:** [moatcheck.co](https://moatcheck.co)
 
@@ -22,10 +22,11 @@ MoatCheck analyzes startup ideas across 7 competitive dimensions and provides a 
 
 ## 🏗️ Architecture
 
-### Multi-Agent System (4 Agents in Parallel)
+### Multi-Agent System (5 Specialized Agents)
 
 | Agent | Role | Data Sources |
 |-------|------|-------------|
+| 🦉 **Verdict Owl** | Final GO/NO-GO Synthesis | Output from the 4 prior agents |
 | 🔍 **Market Scanner** | Competitive intelligence, TAM/SAM/SOM | Live web search + market data |
 | 🏆 **Pattern Matcher** | Success pattern analysis | Verified success cases + YC insights |
 | 💀 **Risk Analyzer** | Failure pattern detection | Verified failure cases + statistics |
@@ -39,6 +40,8 @@ User Input → Tavily Web Search (4 parallel queries)
            RAG Knowledge Base (7 curated data files)
                 ↓
            4 AI Agents (parallel execution)
+                ↓
+           1 Verdict Agent (final synthesis)
                 ↓
            Aggregated Results Dashboard
 ```
@@ -108,7 +111,7 @@ Visit `http://localhost:3000` 🎉
 ## 📸 Screenshots
 
 ### Landing Page
-Premium dark theme with amber/gold accents, featuring the 4 AI agents and how-it-works flow.
+Premium dark theme with flat orange accents, featuring the 5 AI agents and how-it-works flow.
 
 ### Dashboard
 Idea input with personality toggle (Balanced/Brutal), document upload, and tabbed results view.
@@ -122,7 +125,7 @@ Verified failure case studies with funding amounts sourced from TechCrunch and C
 ## 🏆 Built for DigitalOcean Hackathon
 
 MoatCheck showcases DigitalOcean Gradient's Serverless Inference capabilities, demonstrating:
-- **Multi-agent orchestration** — 4 agents running in parallel
+- **Multi-agent orchestration** — 5 agents cooperating (4 parallel, 1 synthesis)
 - **RAG (Retrieval-Augmented Generation)** — Curated knowledge base
 - **Real-time web search integration** — Tavily-powered grounding
 - **Anti-hallucination engineering** — Production-ready AI output quality
