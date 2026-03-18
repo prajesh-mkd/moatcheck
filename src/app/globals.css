@@ -490,7 +490,7 @@ button:active:not(:disabled) {
   .hero-squad { padding: 16px 12px 24px; }
   .hero-squad-agents { gap: 20px 8px; justify-content: center; }
   .hero-squad-agent { flex: 0 0 31%; }
-  .hero-squad-role { font-size: 0.6rem; white-space: nowrap; margin-top: 4px; }
+  .hero-squad-role { white-space: nowrap; margin-top: 4px; }
   .hero-squad-role br { display: none; }
   .hero-squad-avatar { font-size: 2rem; }
   
