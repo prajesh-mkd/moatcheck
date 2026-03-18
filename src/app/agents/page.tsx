@@ -49,7 +49,7 @@ export default function AgentsPage() {
         <section className="agents-section" style={{ padding: 0 }}>
           <h1 className="section-title">Your AI analysis team</h1>
           <p className="section-subtitle">
-            5 specialist agents powered by DigitalOcean Gradient AI, each bringing a different lens to your idea.
+            A team of 5 specialized AI agents, rigorously stress-testing your idea from every angle.
           </p>
           <div className="agents-grid">
             {AGENTS.map((a, i) => (
