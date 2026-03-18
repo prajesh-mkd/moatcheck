@@ -11,9 +11,15 @@ export default function HomePage() {
       <section className="hero" id="hero">
         <div className="hero-glow" />
         <h1>
-          <span>Stress-test your</span>
-          <span>startup idea <span className="hero-highlight">before</span></span>
-          <span className="hero-highlight">you burn the cash</span>
+          <div className="hero-desktop">
+            <span>Stress-test your startup idea</span>
+            <span className="hero-highlight">before you burn the cash</span>
+          </div>
+          <div className="hero-mobile">
+            <span>Stress-test your</span>
+            <span>startup idea <span className="hero-highlight">before</span></span>
+            <span className="hero-highlight">you burn the cash</span>
+          </div>
         </h1>
 
         <div className="hero-squad">
