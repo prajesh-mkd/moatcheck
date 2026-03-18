@@ -487,10 +487,10 @@ button:active:not(:disabled) {
   .hero-desktop { display: none !important; }
   .hero-mobile { display: flex !important; flex-direction: column; align-items: center; justify-content: center; }
   
-  .hero-squad { padding: 16px 12px 24px; }
-  .hero-squad-agents { gap: 20px 8px; justify-content: center; }
-  .hero-squad-agent { flex: 0 0 31%; }
-  .hero-squad-role { white-space: nowrap; margin-top: 4px; }
+  .hero-squad { padding: 16px 2px 24px; width: 100%; max-width: 480px; }
+  .hero-squad-agents { gap: 24px 2px; justify-content: center; }
+  .hero-squad-agent { flex: 0 0 32%; max-width: 33%; min-width: 0; }
+  .hero-squad-role { white-space: nowrap; margin-top: 4px; letter-spacing: -0.04em; }
   .hero-squad-role br { display: none; }
   .hero-squad-avatar { font-size: 2rem; }
   
