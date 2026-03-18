@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛡️ MoatCheck — AI-Powered Startup Idea Validator
 
-## Getting Started
+> **Is your startup idea defensible?** MoatCheck uses a team of 4 AI agents to evaluate your startup's competitive moat, identify risks, and provide actionable strategies — all powered by DigitalOcean Gradient AI.
 
-First, run the development server:
+🔗 **Live:** [moatcheck.co](https://moatcheck.co)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🎯 What it Does
+
+MoatCheck analyzes startup ideas across 7 competitive dimensions and provides a comprehensive MOAT Scorecard:
+
+- **🌐 Network Effects** — Does more users = more value?
+- **🔄 Switching Costs** — How painful is it to leave?
+- **📊 Data Advantage** — Does usage create a data moat?
+- **💰 Cost Advantage** — Can you undercut at scale?
+- **🏛️ Regulatory/IP** — Legal barriers to entry?
+- **🎯 Brand/Trust** — Reputation moat potential?
+- **⚙️ Technical IP** — Hard-to-replicate tech?
+- **🤖 AI Disruption Risk** — Will LLMs crush this idea?
+
+## 🏗️ Architecture
+
+### Multi-Agent System (4 Agents in Parallel)
+
+| Agent | Role | Data Sources |
+|-------|------|-------------|
+| 🔍 **Market Scanner** | Competitive intelligence, TAM/SAM/SOM | Live web search + market data |
+| 🏆 **Pattern Matcher** | Success pattern analysis | Verified success cases + YC insights |
+| 💀 **Risk Analyzer** | Failure pattern detection | Verified failure cases + statistics |
+| 🛡️ **Moat Evaluator** | 7-dimension moat scoring | Moat examples + AI disruption framework |
+
+### Data Pipeline
+
+```
+User Input → Tavily Web Search (4 parallel queries)
+                ↓
+           RAG Knowledge Base (7 curated data files)
+                ↓
+           4 AI Agents (parallel execution)
+                ↓
+           Aggregated Results Dashboard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Anti-Hallucination System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+LLMs can fabricate company names and statistics. MoatCheck addresses this with:
+1. **Live web search** — Each agent gets targeted Tavily search results for grounding
+2. **RAG Knowledge Base** — 7 curated markdown files with verified data
+3. **Anti-hallucination rules** — Explicit instructions to never fabricate data
+4. **Low temperature (0.3)** — More factual, less creative outputs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Personality Modes
 
-## Learn More
+- **⚖️ Balanced** — Professional and constructive analysis
+- **🔥 Brutal** — Ruthlessly honest, VC-skeptic perspective
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Component | Technology |
+|-----------|-----------|
+| **Frontend** | Next.js 16, React, TypeScript |
+| **Styling** | Custom CSS with glassmorphism dark theme |
+| **LLM** | DigitalOcean Gradient Serverless Inference |
+| **Analysis Model** | OpenAI GPT-OSS-120B (via DO Gradient) |
+| **Web Search** | Tavily API (AI-optimized search) |
+| **Markdown** | react-markdown + remark-gfm |
+| **Document Parsing** | pdf-parse, mammoth (DOCX) |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 RAG Knowledge Base
 
-## Deploy on Vercel
+7 curated data files powering the analysis:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| File | Contents |
+|------|----------|
+| `failure_reasons.md` | CB Insights failure statistics, rates by stage/industry |
+| `failure_cases.md` | 15+ verified failure case studies (Quibi, Theranos, etc.) |
+| `success_cases.md` | 12+ success stories with moat scores (Airbnb, Stripe, etc.) |
+| `moat_examples.md` | Real examples for each moat dimension |
+| `ai_disruption.md` | AI disruption risk framework + AI-proof strategies |
+| `market_data.md` | Market size data by industry (TAM, CAGR) |
+| `yc_insights.md` | YC advice, success patterns, founder traits |
+| `pivot_stories.md` | 8 famous pivot stories with lessons |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/moatcheck.git
+cd moatcheck
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.local.example .env.local
+# Add your keys:
+# GRADIENT_MODEL_ACCESS_KEY=your-do-gradient-key
+# TAVILY_API_KEY=your-tavily-key
+
+# Run development server
+npm run dev
+```
+
+Visit `http://localhost:3000` 🎉
+
+## 📸 Screenshots
+
+### Landing Page
+Premium dark theme with amber/gold accents, featuring the 4 AI agents and how-it-works flow.
+
+### Dashboard
+Idea input with personality toggle (Balanced/Brutal), document upload, and tabbed results view.
+
+### MOAT Scorecard
+7-dimension scoring with real-world comparisons to companies like Uber, Stripe, and Airbnb.
+
+### Risk Analysis
+Verified failure case studies with funding amounts sourced from TechCrunch and Crunchbase.
+
+## 🏆 Built for DigitalOcean Hackathon
+
+MoatCheck showcases DigitalOcean Gradient's Serverless Inference capabilities, demonstrating:
+- **Multi-agent orchestration** — 4 agents running in parallel
+- **RAG (Retrieval-Augmented Generation)** — Curated knowledge base
+- **Real-time web search integration** — Tavily-powered grounding
+- **Anti-hallucination engineering** — Production-ready AI output quality
+
+## 📄 License
+
+MIT License — built with ❤️ and ☕ at 2 AM.
