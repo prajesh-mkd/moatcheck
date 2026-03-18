@@ -19,10 +19,7 @@ export default function PrivacyPage() {
           <h2>3. Data Processing and LLMs</h2>
           <p>We utilize secure, industry-standard third-party AI models to analyze your startup ideas and documents in real-time. Data is processed in accordance with the applicable third-party provider's terms of service and privacy policies.</p>
           
-          <h2>4. Data Retention</h2>
-          <p>Ideas and files processed during an anonymous browser session are designed to be temporary and are not permanently stored by our platform.</p>
-          
-          <h2>5. Contact Us</h2>
+          <h2>4. Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, please contact us at support via the link in the navigation menu.</p>
         </div>
       </main>
