@@ -11,6 +11,13 @@ const AGENTS = [
     color: "var(--text-primary)",
   },
   {
+    emoji: "🐢",
+    name: "Momo the Moat Turtle",
+    role: "Defensibility Expert",
+    desc: "Scores your competitive moat across 7 dimensions + AI disruption risk. The core of MoatCheck.",
+    color: "var(--warning)",
+  },
+  {
     emoji: "🦦",
     name: "Max the Market Meerkat",
     role: "Competitive Intelligence",
@@ -30,13 +37,6 @@ const AGENTS = [
     role: "Failure Detective",
     desc: "Finds startups with similar models that died. Surfaces the red flags and existential risks before they burn you.",
     color: "var(--danger)",
-  },
-  {
-    emoji: "🐢",
-    name: "Momo the Moat Turtle",
-    role: "Defensibility Expert",
-    desc: "Scores your competitive moat across 7 dimensions + AI disruption risk. The core of MoatCheck.",
-    color: "var(--warning)",
   },
 ];
 

@@ -31,6 +31,11 @@ export default function HomePage() {
               <div className="hero-squad-role">The Verdict Owl</div>
             </div>
             <div className="hero-squad-agent">
+              <div className="hero-squad-avatar">🐢</div>
+              <div className="hero-squad-name">Momo</div>
+              <div className="hero-squad-role">The Moat Turtle</div>
+            </div>
+            <div className="hero-squad-agent">
               <div className="hero-squad-avatar">🦦</div>
               <div className="hero-squad-name">Max</div>
               <div className="hero-squad-role">The Market Meerkat</div>
@@ -44,11 +49,6 @@ export default function HomePage() {
               <div className="hero-squad-avatar">🦏</div>
               <div className="hero-squad-name">Rex</div>
               <div className="hero-squad-role">The Risk Rhino</div>
-            </div>
-            <div className="hero-squad-agent">
-              <div className="hero-squad-avatar">🐢</div>
-              <div className="hero-squad-name">Momo</div>
-              <div className="hero-squad-role">The Moat Turtle</div>
             </div>
           </div>
         </div>
