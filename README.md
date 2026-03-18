@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 > **Is your startup idea defensible?** MoatCheck uses a specialized team of 5 AI agents to evaluate your startup's competitive moat, identify risks, and synthesize a final verdict — all powered by DigitalOcean Gradient AI.
 
-🔗 **Live:** [moatcheck.co](https://moatcheck.co)
+🔗 **Live:** [moatcheck.ai](https://moatcheck.ai)
 
 ---
 
